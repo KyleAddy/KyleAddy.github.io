@@ -19,6 +19,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 	
 
@@ -3221,7 +3222,6 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
 	}
 
 		#wrapper > .bg {
@@ -3612,16 +3612,17 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
-		height: 4rem;
+		background: rgb(30, 37, 46);
+		height: rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
-		overflow: hidden;
-		padding: 0 2rem 0 0;
-		position: relative;
+		padding: 1rem;
+		position: sticky;
+		top: 0;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 3;
+		
 	}
 
 		#nav ul.divided li {
@@ -3646,7 +3647,7 @@ input, select, textarea {
 
 		#nav a {
 			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom-color: transparent;
 		}
 
 			#nav a:hover {
@@ -3695,6 +3696,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			padding-left: 0;
 			text-transform: uppercase;
+			height: 4rem;
 		}
 
 			#nav ul.links li {
@@ -3749,6 +3751,7 @@ input, select, textarea {
 			}
 
 		}
+		
 
 /* Main */
 
@@ -3759,10 +3762,11 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		overflow: hidden;
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -3941,6 +3945,11 @@ input, select, textarea {
 			}
 
 		}
+
+	embed.pdf{
+		width: 100%;
+		height: 1000px;
+	}
 
 /* Footer */
 

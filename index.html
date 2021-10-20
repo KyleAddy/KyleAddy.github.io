@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Kyle Addy</title>
+		<title>Kyle Addy Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,21 +21,14 @@
 							<!-- <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li> -->
 						</ul>
 					</div>
-
-				<!-- Header -->
-				<!--
-					<header id="header">
-						<a href="index.html" class="logo">Kyle Addy</a>
-					</header>
-				-->
-				<!-- Nav -->
+					
+					<!-- Nav -->
 					<nav id="nav">						
 						<ul class="links">
-							<!--
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li class="active"><a href="generic.html">Generic</a></li>
-							<li class="active"><a href="elements.html">elements</a></li>
-							-->
+							
+							<li id="softwareDevButton"><a onClick="scrollToSection('SoftwareDevelopment')">Software Development</a></li>
+							<li id="graphicDesignButton"><a onClick="scrollToSection('graphicDesign')" >Graphic Design</a></li>
+														
 						</ul>
 						 
 						<ul class="icons">
@@ -43,7 +36,6 @@
 							<li><a href="https://github.com/KyleAddy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
-
 				<!-- Main -->
 					<div id="main">
 
@@ -65,6 +57,8 @@
 							-->
 
 						<!-- Posts -->
+						<header class="major" id="SoftwareDevelopment"><h1>Software Development</h1></header>
+
 							<section class="posts">
 								<article>
 									<header>
@@ -88,10 +82,37 @@
 										<li><a href="https://github.com/KyleAddy/PythonCalculator" class="button">See Code</a></li>
 									</ul>
 								</article>
-							</section>
-							</section>
+							</section>		
 
+							<header class="major" id="graphicDesign"><h1>Graphic Design</h1></header>
+							
+							<section class="posts">
 
+								<article>
+									<header>
+										<h2>Personal Logo<br />
+										Design and Process</h2>
+									</header>
+									<div class="image fit"><img src="./images/GraphicDesign/Personal Logo Design/Personal logo.PNG" alt="" /></div>
+									<p>My process of designing a personal logo for my graphic design work.</p>
+									<ul class="actions special">
+										<li><a href="PersonalLogoProcess.html" class="button">View Process</a></li>
+									</ul>									
+								</article>
+
+								<article>
+									<header>
+										<h2>Imagine Dragons<br />
+										Album Cover Redesign</h2>
+									</header>
+									<div class="image fit"><img src="./images/GraphicDesign/Album Cover Redesign/Imagine Dragons Album Cover Redesign.png" alt="" /></div>
+									<p>Redesigned the album cover for Imagine Dragons' Evolve album, while keeping the original in mind and using photos that i took personaly.</p>
+									<ul class="actions special">
+										<li><a href="AlbumCoverRedesign.html" class="button">View Process</a></li>
+									</ul>									
+								</article>
+
+							</section>		
 
 					</div>
 
@@ -99,16 +120,6 @@
 					<footer id="footer">
 						
 						<section class="split contact">
-							<!--
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>-->
 							<section>
 								<h3>Email</h3>
 								<p><a href="mailto: KyleAddyBusiness@gmail.com">KyleAddyBusiness@gmail.com</a></p>
@@ -122,11 +133,6 @@
 							</section>
 						</section>
 					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-					</div>
-
 			</div>
 
 		<!-- Scripts -->
@@ -137,6 +143,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/navScroll.js"></script>
 
 	</body>
 </html>
